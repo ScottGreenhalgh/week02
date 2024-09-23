@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <title>Optimise Image</title>
+  </head>
+  <body>
+    <div class="box">
+      <img
+        srcset="
+          ./assets/mountain-540p.webp   960w,
+          ./assets/mountain-720p.webp  1280w,
+          ./assets/mountain-1080p.webp 1920w,
+          ./assets/mountain-1440p.webp 2560w
+        "
+        src="./assets/mountain-1440p.webp"
+        alt="mountain"
+      />
+    </div>
+  </body>
+</html>

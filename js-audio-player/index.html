@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <p>Our own audio player:</p>
+      <p id="titleText">no song playing</p>
+      <div>
+        <audio
+          src="./assets/rainforest_nature.mp3"
+          controls
+          id="player"
+        ></audio>
+      </div>
+      <div>
+        <button class="playButton" id="playBtn">Play</button>
+        <button class="playButton" id="pauseBtn">Pause</button>
+        <button class="playButton" id="stopBtn">Stop</button>
+        <button class="playButton" id="skipBack">-10s</button>
+        <button class="playButton" id="skipFor">+10s</button>
+        <input type="range" min="0" max="1" step="0.01" />
+        <button class="playButton" id="previousTrack">Prev</button>
+        <button class="playButton" id="nextTrack">Next</button>
+      </div>
+    </section>
+  </body>
+</html>
